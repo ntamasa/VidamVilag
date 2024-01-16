@@ -1,0 +1,23 @@
+{
+  "name": "vidamvilag",
+  "version": "1.0.0",
+  "description": "This is a project of mine that has the goal of getting back to javascript from a little bit of a break, and also helping my girlfriend with her startup with this website.",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start:js": "parcel index.html",
+    "start": "npm-run-all --parallel devserver watch:sass start:js",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build:js": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Nagy Tamás Albert",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
