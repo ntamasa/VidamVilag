@@ -87,6 +87,7 @@ body {
     .navigation__menu-link {
       text-decoration: none;
       color: #e1c576;
+      text-shadow: 0.1rem 0.1rem 0.25rem #1B0F09;
       transition: all .3s ease; }
     .navigation__menu-link:hover {
       color: #eddcad; }
@@ -117,4 +118,5 @@ body {
     bottom: 3.5rem;
     left: 2.5rem;
     line-height: 7rem;
-    letter-spacing: .5rem; }
+    letter-spacing: .5rem;
+    text-shadow: 0.15rem 0.15rem 0.5rem #1B0F09; }

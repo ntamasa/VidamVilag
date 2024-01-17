@@ -49,7 +49,8 @@ body {
         &-link {
             text-decoration: none;
             color: $text-heading;
-            
+            text-shadow: $shadow-general;
+
             // Hover effect animation
             transition: all .3s ease;
         }
@@ -100,6 +101,8 @@ body {
         line-height: 7rem;
         // line-height: 7rem;
         letter-spacing: .5rem;
+
+        text-shadow: $shadow-heading;
 
         // transform: rotate(5deg);
     }
