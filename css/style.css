@@ -50,6 +50,10 @@ body {
   .heading-primary--2 {
     font-size: 7.4rem; }
 
+.heading-secondary {
+  font-size: 3.8rem;
+  color: #1B0F09; }
+
 .logo {
   height: 7.5rem;
   width: 7.5rem; }
@@ -93,7 +97,7 @@ body {
     .navigation__menu-link {
       text-decoration: none;
       color: #e1c576;
-      text-shadow: 0.1rem 0.1rem 0.25rem #1B0F09;
+      text-shadow: 0.1rem 0.1rem 0.25rem rgba(27, 15, 9, 0.4);
       transition: all .3s ease; }
     .navigation__menu-link:hover {
       color: #eddcad; }
@@ -125,7 +129,7 @@ body {
     left: 2.5rem;
     line-height: 7rem;
     letter-spacing: .5rem;
-    text-shadow: 0.15rem 0.15rem 0.5rem #1B0F09; }
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(27, 15, 9, 0.8); }
 
 .motto {
   height: 100%;
@@ -141,3 +145,43 @@ body {
     color: #1B0F09; }
   .motto__divider {
     width: 65%; }
+
+.about {
+  width: 100%;
+  padding: 20rem 10rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr max-content;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around; }
+  .about__text-box {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    gap: 5rem;
+    align-content: space-between;
+    align-items: end; }
+    .about__text-box--heading {
+      text-shadow: 0.1rem 0.1rem 0.25rem rgba(27, 15, 9, 0.4);
+      align-self: center;
+      letter-spacing: .25rem; }
+    .about__text-box--menu {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .about__text-box--menu-item {
+        font-size: 2rem;
+        color: #1B0F09;
+        line-height: 3rem;
+        letter-spacing: .05rem; }
+    .about__text-box--divider {
+      width: 100%; }
+  .about__image {
+    height: 50rem;
+    width: 50rem;
+    justify-self: end;
+    border-radius: 1rem; }

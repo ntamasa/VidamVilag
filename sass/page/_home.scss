@@ -165,3 +165,87 @@ body {
         width: 65%;
     }
 }
+
+/////////////////////////////////////////////////////////
+/// About us
+.about {
+    // Dimensions
+    width: 100%;
+
+    // Spacing around
+    padding: 20rem 10rem;
+
+    // Making it a grid
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr max-content;
+
+    // Spacing between the items
+    gap: 2rem;
+
+    // Alignment
+    align-items: center;
+    justify-content: space-around;
+
+    &__text-box {
+        // Dimensions
+        height: 100%;
+        width: 80%;
+
+        // Making it a grid
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr min-content;
+
+        // Spacing
+        gap: 5rem;
+
+        align-content: space-between;
+        align-items: end;
+
+        &--heading {
+            // Shadows
+            text-shadow: $shadow-general;
+            align-self: center;
+            letter-spacing: .25rem;
+        }
+
+        &--menu {
+            // Dimensions
+            height: 100%;
+
+            // Making it a flexbox
+            display: flex;
+            flex-direction: column;
+
+            // Alignment
+            justify-content: space-around;
+
+            &-item {
+                // Text styling
+                font-size: 2rem;
+                color: $text;
+
+                // Line, letter spacing
+                line-height: 3rem;
+                letter-spacing: .05rem;
+            }
+        }
+
+        &--divider {
+            // Dimensions
+            width: 100%;
+        }
+    }
+
+    &__image {
+        // Dimensions
+        @include square(50rem);
+
+        // Placing it to the right end of the grid
+        justify-self: end;
+
+        // Rounded corners
+        border-radius: 1rem;
+    }
+}
