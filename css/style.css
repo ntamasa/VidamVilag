@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+body {
+  font-family: "IMB Plex sans", sans-serif; }
+
+.heading-primary {
+  font-size: 9.8rem;
+  color: #e1c576; }
+  .heading-primary--2 {
+    font-size: 7.4rem; }
+
+.logo {
+  height: 7.5rem;
+  width: 7.5rem; }
+
+body {
+  overflow: hidden; }
+
+body {
+  background-color: #d9d9d9;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 20rem) max-content 1fr;
+  position: relative; }
+
+.navigation {
+  width: 100vw;
+  height: 7.5rem;
+  background-color: #3c2214;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: max-content 2fr 1fr;
+  align-items: center; }
+  .navigation__logo {
+    margin-left: 2rem;
+    justify-self: start;
+    cursor: pointer; }
+  .navigation__menu {
+    margin-right: 5rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, min-content);
+    justify-content: space-between; }
+    .navigation__menu-item {
+      font-size: 2rem; }
+    .navigation__menu-link {
+      text-decoration: none;
+      color: #e1c576;
+      transition: all .3s ease; }
+    .navigation__menu-link:hover {
+      color: #eddcad; }
+
+.header {
+  width: 100vw;
+  height: 70rem;
+  position: relative;
+  overflow: hidden; }
+  .header__background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    background-image: url("../../img/header-img.jpg");
+    background-size: cover;
+    filter: blur(0.25rem);
+    z-index: -1; }
+  .header__text-background {
+    position: absolute;
+    top: -6.25rem;
+    left: 0;
+    z-index: -1; }
+  .header__text {
+    z-index: 1;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 2.5rem;
+    line-height: 7rem;
+    letter-spacing: .5rem; }
