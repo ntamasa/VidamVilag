@@ -5,7 +5,7 @@ body {
     // Making it a grid
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content minmax(max-content, 40rem) minmax(max-content, 15rem) max-content 1fr;
+    grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 15rem) max-content 1fr;
 
     // Making it relative so every absolute positioned item relates to it if there isnt a nearer relative parent
     position: relative;
