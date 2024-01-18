@@ -200,6 +200,7 @@ body {
         // Spacing
         gap: 5rem;
 
+        // Alignment
         align-content: space-between;
         align-items: end;
 
@@ -208,6 +209,9 @@ body {
             text-shadow: $shadow-general;
             align-self: center;
             letter-spacing: .25rem;
+
+            // Spacing
+            margin-bottom: 1.2rem;
         }
 
         &--menu {
@@ -219,7 +223,7 @@ body {
             flex-direction: column;
 
             // Alignment
-            justify-content: space-around;
+            justify-content: space-between;
 
             &-item {
                 // Text styling
@@ -247,5 +251,93 @@ body {
 
         // Rounded corners
         border-radius: 1rem;
+    }
+}
+
+/////////////////////////////////////////////////////////
+/// About us
+.services {
+    // Display as grid so it is in the middle at all cost
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: min-content minmax(160rem, 1fr);
+
+    // Alignment to the middle
+    justify-items: center;
+    align-content: space-between;
+
+    // Spacing between the rows
+    gap: 5rem;
+
+    // Spacing to the next section
+    margin-bottom: 20rem;
+
+    &__cards {
+        // Dimensions
+        width: 100%;
+
+        // Spacing on the sides
+        padding: 0 10rem;
+
+        // Making it a grid
+        display: grid;
+        grid-template-rows: repeat(3, minmax(max-content, 1fr));
+        grid-template-columns: repeat(6, minmax(max-content, 1fr));
+
+        // Alignment
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__heading {
+        // Text styleing
+        color: $text;
+        text-decoration: underline;
+        text-shadow: $shadow-small;
+        letter-spacing: .1rem;
+
+        // Spacing
+        margin-bottom: 1.2rem;
+    }
+
+    &__card {
+        // Border
+        border: $card-border;
+        border-radius: 1rem;
+
+        // Making it a grid
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: repeat(3, min-content);
+
+        // Alignment
+        justify-items: center;
+        justify-content: center;
+        align-content: space-around;
+
+        &--image {
+            // Dimensions
+            @include square(25rem);
+
+            // Rounded edges
+            border-radius: 1rem;
+        }
+
+        &--description {
+            // Dimension
+            width: 25rem;
+
+            // Alignment
+            text-align: center;
+
+            // Text styles
+            font-size: 1.8rem;
+            font-weight: 300;
+
+            // Readability
+            line-height: 2.4rem;
+            letter-spacing: .1rem;
+
+        }
     }
 }
