@@ -345,36 +345,69 @@ body {
 /////////////////////////////////////////////////////////
 /// Footer
 .footer {
-    padding: 20rem 10rem;
+    // Spacing
+    padding: 0 10rem;
 
+    // Spacing to the bottom of the page
+    margin-bottom: 10rem;
+
+    // Text styling
     color: $text;
 
+    // Making it a grid
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.4fr max-content 1fr;
+
+    // Alignment
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    
+    // Spacing
+    gap: 10rem;
+
     &__logo {
-        @include square(35rem);
+        // Dimensions
+        @include square(30rem);
     }
 
     &__copyright {
-        font-size: 3rem;
-        letter-spacing: .1rem;
+        // Text styling
+        font-size: 2rem;
         text-align: center;
+
+        // Readability
+        letter-spacing: .1rem;
     }
 }
 
 .contacts {
     &__heading {
-        font-size: 3.6rem;
+        // Text styling
+        font-size: 3rem;
         font-weight: 500;
         text-shadow: $shadow-small;
+        text-decoration: underline;
+
+        // Spacing
         padding-bottom: 3.6rem;
+
+        // Readability
+        letter-spacing: .05rem;
     }
 
     &__list {
         &--item {
-            font-size: 3rem;
+            // Text styling
+            font-size: 2.4rem;
+
+            // Spacing
             padding-left: 7.5rem;
             padding-bottom: 3.6rem;
         }
 
+        // Not making unecessary spacing after the last elemnt
         &--item:last-of-type {
             padding-bottom: 0;
         }
@@ -382,11 +415,15 @@ body {
 }
 
 .others-box {
+    // Dimensions
+    width: 70%;
+
     .socials {
-        display: inline;
+        // Making it a flexbox for placement
+        display: flex;
+        justify-content: space-around;
 
-        &__link {
-
-        }
+        // Spacing
+        margin-bottom: 3.6rem;
     }
 }
