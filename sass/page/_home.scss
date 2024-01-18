@@ -341,3 +341,52 @@ body {
         }
     }
 }
+
+/////////////////////////////////////////////////////////
+/// Footer
+.footer {
+    padding: 20rem 10rem;
+
+    color: $text;
+
+    &__logo {
+        @include square(35rem);
+    }
+
+    &__copyright {
+        font-size: 3rem;
+        letter-spacing: .1rem;
+        text-align: center;
+    }
+}
+
+.contacts {
+    &__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        text-shadow: $shadow-small;
+        padding-bottom: 3.6rem;
+    }
+
+    &__list {
+        &--item {
+            font-size: 3rem;
+            padding-left: 7.5rem;
+            padding-bottom: 3.6rem;
+        }
+
+        &--item:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.others-box {
+    .socials {
+        display: inline;
+
+        &__link {
+
+        }
+    }
+}
