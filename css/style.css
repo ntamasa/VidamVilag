@@ -42,7 +42,7 @@ select {
   font: inherit; }
 
 body {
-  font-family: "IMB Plex sans", sans-serif; }
+  font-family: "IBM Plex sans", sans-serif; }
 
 .heading-primary {
   font-size: 9.8rem;
@@ -136,7 +136,7 @@ body {
   justify-items: center; }
   .motto__text {
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
     font-style: italic;
     color: #1B0F09; }
   .motto__divider {
