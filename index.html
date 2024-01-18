@@ -116,20 +116,31 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
+        <div class="footer__divider">
+            <svg class="footer__divider--line" width="1923" height="321" viewBox="0 0 1923 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M515.807 309.019L515.748 309.031L515.69 309.049C473.662 322.737 420.476 322.454 364.274 311.225C308.087 299.999 248.965 277.848 195.111 247.892C141.255 217.934 92.7045 180.192 57.6298 137.806C22.7947 95.7096 1.29734 49.0922 1.00306 1.00022C302.805 1.132 782.87 60.6688 1187.72 120.218C1390.36 150.024 1574.14 179.83 1707.25 202.185C1773.81 213.362 1827.7 222.676 1864.96 229.196C1883.58 232.456 1898.05 235.018 1907.86 236.764C1912.77 237.637 1916.51 238.307 1919.02 238.758C1920.28 238.983 1921.23 239.154 1921.86 239.269L1921.93 239.281C1921.91 239.508 1921.87 239.777 1921.83 240.088C1921.67 241.189 1921.38 242.797 1920.83 244.797C1919.73 248.795 1917.59 254.357 1913.46 260.549C1905.2 272.917 1888.92 287.888 1856.77 297.894C1792.39 317.928 1664.52 318.014 1410.8 237.505C1156.9 156.935 992.713 163.051 862.136 195.242C800.298 210.487 746.018 231.575 693.382 252.025C690.468 253.157 687.559 254.287 684.654 255.415C629.26 276.908 575.335 297.288 515.807 309.019Z" fill="#D9D9D9" stroke="black" stroke-width="2"/>
+                </svg>
+                
+        </div>
         <div class="contacts">
-            <h3>Elérhetőségeink:</h3>
-            <ul>
-                <li>+36 30 287-5598</li>
-                <li>vidamvilagjatszosarok@gmail.com</li>
-                <li>Felkéréseket Nyíregyházán, illetve annak 80 km-es körzetében vállalunk!</li>
+            <h3 class="contacts__heading">Elérhetőségeink:</h3>
+            <ul class="contacts__list">
+                <li class="contacts__list--item">+36 30 287-5598</li>
+                <li class="contacts__list--item">vidamvilagjatszosarok@gmail.com</li>
+                <li class="contacts__list--item">Foglalással kapcsolatos további információk telefonon, e-mailben és facebook üzenetben!</li>
             </ul>
         </div>
-        <div class="logo-box">
-            <img src="./img/logo.pn" alt="Logo">
-        </div>
-        <div class="socials">
-            <p>&copy;Minden jog fenttartva Vidám Világ Játszósarok!</p>
+
+        <img src="./img/logo.png" alt="Logo" class="footer__logo">
+
+        <div class="others-box">
+            <div class="socials">
+                <a target="_blank" href="https://www.facebook.com" class="socials__link"><img src="./img/facebook.png" alt="Facebool logo" class="logo"></a>
+
+                <a target="_blank" href="https://www.instagram.com" class="socials__link"><img src="./img/instagram.png" alt="Instagram logo" class="logo"></a>
+            </div>
+            <p class="footer__copyright">&copy;Minden jog fenttartva Vidám Világ Játszósarok!</p>
         </div>
     </footer>
 </body>
