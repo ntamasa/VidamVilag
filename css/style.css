@@ -42,7 +42,7 @@ select {
   font: inherit; }
 
 body {
-  font-family: "IMB Plex sans", sans-serif; }
+  font-family: "IBM Plex sans", sans-serif; }
 
 .heading-primary {
   font-size: 9.8rem;
@@ -54,14 +54,20 @@ body {
   height: 7.5rem;
   width: 7.5rem; }
 
+.divider {
+  height: .1rem;
+  background-color: #3c2214;
+  border: none;
+  border-radius: 50%; }
+
 body {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 body {
   background-color: #d9d9d9;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 20rem) max-content 1fr;
+  grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 15rem) max-content 1fr;
   position: relative; }
 
 .navigation {
@@ -87,6 +93,7 @@ body {
     .navigation__menu-link {
       text-decoration: none;
       color: #e1c576;
+      text-shadow: 0.1rem 0.1rem 0.25rem #1B0F09;
       transition: all .3s ease; }
     .navigation__menu-link:hover {
       color: #eddcad; }
@@ -105,7 +112,7 @@ body {
     background-image: url("../../img/header-img.jpg");
     background-size: cover;
     filter: blur(0.25rem);
-    z-index: -1; }
+    z-index: -5; }
   .header__text-background {
     position: absolute;
     top: -6.25rem;
@@ -117,4 +124,20 @@ body {
     bottom: 3.5rem;
     left: 2.5rem;
     line-height: 7rem;
-    letter-spacing: .5rem; }
+    letter-spacing: .5rem;
+    text-shadow: 0.15rem 0.15rem 0.5rem #1B0F09; }
+
+.motto {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center; }
+  .motto__text {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #1B0F09; }
+  .motto__divider {
+    width: 65%; }

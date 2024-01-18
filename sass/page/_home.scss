@@ -1,29 +1,37 @@
 body {
+    // Styleing
     background-color: $color-primary;
 
+    // Making it a grid
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 20rem) max-content 1fr;
+    grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 15rem) max-content 1fr;
 
+    // Making it relative so every absolute positioned item relates to it if there isnt a nearer relative parent
     position: relative;
 }
 
+/////////////////////////////////////////////////////////
+/// Navigation
 .navigation {
+    // Dimensions
     width: 100vw;
     height: 7.5rem;
 
+    // Styling
     background-color: $color-primary-dark-2;
 
+    // Making it a grid
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: max-content 2fr 1fr;
-    // gap: 20rem;
 
+    // Alignment
     align-items: center;
 
     &__logo {
+        // Spacing
         margin-left: 2rem;
-
         justify-self: start;
 
         cursor: pointer;
@@ -47,60 +55,113 @@ body {
         }
 
         &-link {
+            // Reset
             text-decoration: none;
+
+            // Coloring
             color: $text-heading;
-            
+
+            // Shadows
+            text-shadow: $shadow-general;
+
             // Hover effect animation
             transition: all .3s ease;
         }
 
         &-link:hover {
+            // Change color on hover
             color: $text-heading-light;
         }
     }
 }
 
+/////////////////////////////////////////////////////////
+/// Header
 .header {
+    // Dimensions
     width: 100vw;
     height: 70rem;
 
+    // Make it the element that absolute position is related to
     position: relative;
+
+    // Hide text background overflow
     overflow: hidden;
 
     &__background {
+        // Dimensions
         height: 100%;
         width: 100%;
+
+        // Positioning it a little bit to the top and right because the blur gives a little shiny border, so it hides it
         position: absolute;
         top: -1.5rem;
         right: -1.5rem;
 
+        // Giving it the picture as a background
         background-image: url("../../img/header-img.jpg");
         background-size: cover;
 
+        // Bluring the background
         filter: blur(.25rem);
 
-        z-index: -1;
+        // So it is under everything
+        z-index: -5;
     }
 
     &__text-background {
+        // Positioning
         position: absolute;
         top: -6.25rem;
         left: 0;
 
+        // So ut us is under the text but on the backround at the same time
         z-index: -1;
     }
 
     &__text {
+        // So it is on top of everything in the header
         z-index: 1;
 
+        // Positioning the text to its place
         position: absolute;
         bottom: 3.5rem;
         left: 2.5rem;
 
+        // Adjusting line height and letter spacing for a big text
         line-height: 7rem;
-        // line-height: 7rem;
         letter-spacing: .5rem;
 
-        // transform: rotate(5deg);
+        // Shadow
+        text-shadow: $shadow-heading;
+    }
+}
+
+/////////////////////////////////////////////////////////
+/// Motto
+.motto {
+    // So it fills the whole area given
+    height: 100%;
+
+    // Display as a grid
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr;
+
+    // Alignment of items
+    align-items: center;
+    justify-items: center;
+
+    &__text {
+        // Text styles
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: italic;
+        color: $text;
+    }
+
+    &__divider {
+        // Length of divider line
+        width: 65%;
     }
 }
