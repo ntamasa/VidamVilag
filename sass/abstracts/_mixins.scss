@@ -2,3 +2,18 @@
     height: $size;
     width: $size;
 }
+
+// Media Queries
+@mixin desktop {
+    // 1700px
+    @media screen and (max-width: 106.25em) {
+        @content;
+    }
+}
+
+@mixin desktop-small {
+    // 1550px
+    @media screen and (max-width: 97em) {
+        @content;
+    }
+}
