@@ -17,3 +17,26 @@
         @content;
     }
 }
+
+@mixin desktop-xsmall {
+    // 1400px
+    @media screen and (max-width: 87.5em) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    // 1250px
+    @media screen and (max-width: 78.125em) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    // 1050px
+    @media screen and (max-width: 65.625em) {
+        @content;
+    }
+}
+
+

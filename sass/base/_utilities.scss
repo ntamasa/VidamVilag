@@ -37,3 +37,9 @@
         }
     }
 }
+
+// Hide something
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
