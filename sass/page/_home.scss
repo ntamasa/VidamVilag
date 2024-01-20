@@ -334,6 +334,9 @@
         justify-content: center;
         align-content: space-around;
 
+        // Shadow
+        box-shadow: $shadow-card;
+
         &--image {
             // Dimensions
             @include square(25rem);
@@ -344,7 +347,7 @@
 
         &--description {
             // Dimension
-            width: 25rem;
+            width: 65%;
 
             // Alignment
             text-align: center;
@@ -650,6 +653,43 @@
             @include square(75rem);
 
             justify-self: center;
+        }
+    }
+
+    /////////////////////////////////////////////////////////
+    /// About us
+    .heading-tertiary {
+        font-size: 3.6rem;
+    }
+    
+    .card {
+        @include square(65rem);
+    }
+
+    .services {
+        margin-bottom: 10rem;
+
+        &__cards {
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: 1fr;
+        }
+
+        &__card {
+            box-shadow: 1.5rem 1.5rem 1.5rem rgba($text, .05);
+
+            &--image {
+                @include square(35rem);
+            }
+
+            &--description {
+                font-size: 2.4rem;
+                font-weight: 400;
+
+                line-height: 3rem;
+                letter-spacing: .25rem;
+
+                width: 65%;
+            }
         }
     }
 }

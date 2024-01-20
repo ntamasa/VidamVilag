@@ -337,13 +337,14 @@ body {
     grid-template-rows: repeat(3, min-content);
     justify-items: center;
     justify-content: center;
-    align-content: space-around; }
+    align-content: space-around;
+    box-shadow: 1.5rem 1.5rem 1.5rem rgba(27, 15, 9, 0.05); }
     .services__card--image {
       height: 25rem;
       width: 25rem;
       border-radius: 1rem; }
     .services__card--description {
-      width: 25rem;
+      width: 65%;
       text-align: center;
       font-size: 1.8rem;
       font-weight: 300;
@@ -497,4 +498,25 @@ body {
     .about__image {
       height: 75rem;
       width: 75rem;
-      justify-self: center; } }
+      justify-self: center; }
+  .heading-tertiary {
+    font-size: 3.6rem; }
+  .card {
+    height: 65rem;
+    width: 65rem; }
+  .services {
+    margin-bottom: 10rem; }
+    .services__cards {
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: 1fr; }
+    .services__card {
+      box-shadow: 1.5rem 1.5rem 1.5rem rgba(27, 15, 9, 0.05); }
+      .services__card--image {
+        height: 35rem;
+        width: 35rem; }
+      .services__card--description {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: .25rem;
+        width: 65%; } }
