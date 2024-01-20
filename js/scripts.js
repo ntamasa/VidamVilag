@@ -53,15 +53,3 @@ window.addEventListener('resize', (e) => {
         }
     }
 });
-
-// Hamburger menu click
-
-// const button = document.querySelector(".hamburger-menu");
-// const middleLine = document.querySelector(".hamburger-menu__line");
-
-// button.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     middleLine.classList.add("hidden");
-// });
-
