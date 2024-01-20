@@ -521,21 +521,22 @@ body {
         letter-spacing: .25rem;
         width: 65%; }
   .footer {
-    grid-template-rows: max-content 1fr 1fr max-content;
+    grid-template-rows: max-content 1fr 1fr;
     grid-template-columns: 1fr;
-    gap: 2.5rem; }
+    align-content: space-between;
+    margin: 0; }
     .footer__logo {
-      grid-row: 5 / -1;
-      margin-top: -10rem;
-      height: 50rem;
-      width: 50rem; }
-    .footer .contacts__heading {
-      font-size: 5.2rem;
-      font-weight: 500; }
-    .footer .contacts__list--item {
-      font-size: 3.6rem;
-      line-height: 5rem;
-      letter-spacing: .1rem; }
+      position: absolute;
+      visibility: hidden; }
+    .footer .contacts {
+      margin-bottom: -5rem; }
+      .footer .contacts__heading {
+        font-size: 5.2rem;
+        font-weight: 500; }
+      .footer .contacts__list--item {
+        font-size: 3.6rem;
+        line-height: 5rem;
+        letter-spacing: .1rem; }
     .footer .others-box {
       width: 70%;
       margin: 0; }
