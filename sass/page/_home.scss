@@ -5,7 +5,7 @@
     // Making it a grid
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content minmax(max-content, 40rem) minmax(max-content, 15rem) max-content 1fr;
+    grid-template-rows: max-content max-content minmax(max-content, 15rem) max-content 1fr;
 
     // Making it relative so every absolute positioned item relates to it if there isnt a nearer relative parent
     position: relative;
@@ -540,6 +540,12 @@
 }
 
 @include tablet {
+    .container {
+        grid-template-rows: max-content max-content minmax(max-content, 25rem) max-content 1fr;
+    }
+
+    /////////////////////////////////////////////////////////
+    /// Navigation
     .navigation {
         height: 15rem;
 
@@ -553,4 +559,41 @@
         }
     }
 
+    /////////////////////////////////////////////////////////
+    /// Kezdőlap
+    .kezdolap {
+        height: 15rem;
+    }
+
+    /////////////////////////////////////////////////////////
+    /// Hero
+    .hero {
+        height: 90rem;
+
+        &__background {
+            top: -2.8rem;
+        }
+
+        &__text-background {
+            top: -6.25rem;
+            left: -12rem;
+        }
+
+        &__text {
+            bottom: 5.5rem;
+            left: 4.5rem;
+
+            line-height: 8.2rem;
+        }
+    }
+
+    .heading-primary {
+        font-size: 11rem;
+
+        &--2 {
+            font-size: 8.6rem;
+        }
+    }
+
+    
 }
