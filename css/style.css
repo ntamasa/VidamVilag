@@ -466,4 +466,11 @@ body {
   .heading-primary {
     font-size: 11rem; }
     .heading-primary--2 {
-      font-size: 8.6rem; } }
+      font-size: 8.6rem; }
+  .motto__text {
+    width: 55%;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 5rem;
+    letter-spacing: .05rem;
+    transform: translateY(-1.25rem); } }
