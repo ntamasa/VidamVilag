@@ -473,4 +473,28 @@ body {
     font-size: 3.2rem;
     line-height: 5rem;
     letter-spacing: .05rem;
-    transform: translateY(-1.25rem); } }
+    transform: translateY(-1.25rem); }
+  .heading-secondary {
+    font-size: 5.2rem; }
+  .about {
+    grid-template-rows: 1fr max-content;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 7.5rem; }
+    .about__text-box {
+      text-align: justify;
+      width: 90%;
+      gap: 7.5rem; }
+      .about__text-box--menu {
+        gap: 6.2rem; }
+        .about__text-box--menu-item {
+          font-size: 3.4rem;
+          font-weight: 400;
+          line-height: 5rem;
+          letter-spacing: .25rem; }
+      .about__text-box--divider {
+        width: 90%; }
+    .about__image {
+      height: 75rem;
+      width: 75rem;
+      justify-self: center; } }

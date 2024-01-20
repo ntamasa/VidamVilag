@@ -608,4 +608,48 @@
         }
     }
 
+    /////////////////////////////////////////////////////////
+    /// About us
+    .heading-secondary {
+        font-size: 5.2rem;
+    }
+
+    .about {
+        grid-template-rows: 1fr max-content;
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        gap: 7.5rem;
+
+        &__text-box {
+            text-align: justify;
+
+            width: 90%;
+
+            gap: 7.5rem;
+
+            &--menu {
+                gap: 6.2rem;
+
+                &-item {
+                    font-size: 3.4rem;
+                    font-weight: 400;
+
+                    line-height: 5rem;
+                    letter-spacing: .25rem;
+                }
+            }
+
+            &--divider {
+                width: 90%;
+            }
+        }
+
+        &__image {
+            @include square(75rem);
+
+            justify-self: center;
+        }
+    }
 }
