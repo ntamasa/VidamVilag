@@ -372,10 +372,6 @@ body {
   .footer__logo {
     height: 30rem;
     width: 30rem; }
-  .footer__copyright {
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: .1rem; }
 
 .contacts {
   margin-left: 10rem; }
@@ -400,6 +396,10 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 3.6rem; }
+  .others-box .copyright {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .1rem; }
 
 @media screen and (max-width: 97em) {
   html {
@@ -519,4 +519,31 @@ body {
         font-weight: 400;
         line-height: 3rem;
         letter-spacing: .25rem;
-        width: 65%; } }
+        width: 65%; }
+  .footer {
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr max-content; }
+    .footer__logo {
+      grid-column: 2 / 3;
+      grid-row: 2 / -1;
+      margin-right: 10rem;
+      height: 40rem;
+      width: 40rem; }
+    .footer .contacts__heading {
+      font-size: 5.2rem;
+      font-weight: 500; }
+    .footer .contacts__list--item {
+      font-size: 3.6rem;
+      line-height: 5rem;
+      letter-spacing: .1rem; }
+    .footer .others-box {
+      width: 70%;
+      margin-left: 20rem; }
+      .footer .others-box .socials {
+        justify-content: center;
+        gap: 15rem; }
+        .footer .others-box .socials__logo {
+          height: 10rem;
+          width: 10rem; }
+      .footer .others-box .copyright {
+        font-size: 3.2rem; } }

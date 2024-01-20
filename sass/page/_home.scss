@@ -367,9 +367,6 @@
 /////////////////////////////////////////////////////////
 /// Footer
 .footer {
-    // Spacing
-    // padding: 0 10rem;
-
     // Spacing to the bottom of the page
     margin-bottom: 10rem;
 
@@ -409,14 +406,7 @@
         @include square(30rem);
     }
 
-    &__copyright {
-        // Text styling
-        font-size: 2rem;
-        text-align: center;
-
-        // Readability
-        letter-spacing: .1rem;
-    }
+    
 }
 
 .contacts {
@@ -468,6 +458,15 @@
 
         // Spacing
         margin-bottom: 3.6rem;
+    }
+
+    .copyright {
+        // Text styling
+        font-size: 2rem;
+        text-align: center;
+
+        // Readability
+        letter-spacing: .1rem;
     }
 }
 
@@ -689,6 +688,57 @@
                 letter-spacing: .25rem;
 
                 width: 65%;
+            }
+        }
+    }
+
+    /////////////////////////////////////////////////////////
+    /// About us
+    .footer {
+        grid-template-rows: max-content 1fr max-content;
+        grid-template-columns: 1fr max-content;
+
+        &__logo {
+            grid-column: 2 / 3;
+            grid-row: 2 / -1;
+
+            margin-right: 10rem;
+
+            @include square(40rem);
+        }
+
+        .contacts {
+            &__heading {
+                font-size: 5.2rem;
+                font-weight: 500;
+            }
+
+            &__list {
+                &--item {
+                    font-size: 3.6rem;
+
+                    line-height: 5rem;
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+
+        .others-box {
+            width: 70%;
+
+            margin-left: 20rem;
+
+            .socials {
+                justify-content: center;
+                gap: 15rem;
+
+                &__logo {
+                    @include square(10rem);
+                }
+            }
+
+            .copyright {
+                font-size: 3.2rem;
             }
         }
     }
