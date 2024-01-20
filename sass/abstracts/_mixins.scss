@@ -47,4 +47,39 @@
     }
 }
 
+@mixin tablet-small {
+    // 900px
+    @media screen and (max-width: 56.25em) {
+        @content;
+    }
+}
+
+@mixin phone-big {
+    // 650px
+    @media screen and (max-width: 40.625em) {
+        @content;
+    }
+}
+
+@mixin phone-big--2 {
+    // 500px
+    @media screen and (max-width: 31.25em) {
+        @content;
+    }
+}
+
+@mixin phone {
+    // 420px
+    @media screen and (max-width: 26.25em) {
+        @content;
+    }
+}
+
+@mixin phone-small {
+    // 350px
+    @media screen and (max-width: 21.875em) {
+        @content;
+    }
+}
+
 

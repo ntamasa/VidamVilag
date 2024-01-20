@@ -309,13 +309,13 @@ body {
 
 .services {
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: max-content;
   grid-template-rows: min-content minmax(160rem, 1fr);
   justify-items: center;
   align-content: space-between;
   gap: 5rem; }
   .services__cards {
-    width: 100%;
+    width: 100vw;
     padding: 0 10rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -374,7 +374,7 @@ body {
     width: 30rem; }
 
 .contacts {
-  margin-left: 10rem; }
+  margin: 0 10rem; }
   .contacts__heading {
     font-size: 3rem;
     font-weight: 500;
@@ -478,12 +478,15 @@ body {
   .heading-secondary {
     font-size: 5.2rem; }
   .about {
+    width: 85%;
+    padding: 20rem 0;
+    margin: 0 auto;
     grid-template-rows: 1fr max-content;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 7.5rem; }
     .about__text-box {
-      text-align: justify;
+      text-align: center;
       width: 90%;
       gap: 7.5rem; }
       .about__text-box--menu {
@@ -508,7 +511,8 @@ body {
     margin-bottom: 10rem; }
     .services__cards {
       grid-template-rows: repeat(8, 1fr);
-      grid-template-columns: 1fr; }
+      grid-template-columns: 1fr;
+      padding: 0; }
     .services__card {
       box-shadow: 1.5rem 1.5rem 1.5rem rgba(27, 15, 9, 0.05); }
       .services__card--image {
@@ -548,3 +552,48 @@ body {
           width: 10rem; }
       .footer .others-box .copyright {
         font-size: 3.2rem; } }
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 43.75%; }
+  .hero__text-background {
+    top: -19rem;
+    left: -22rem; }
+  .about__text-box {
+    width: 100%; } }
+
+@media screen and (max-width: 40.625em) {
+  html {
+    font-size: 37.5%; }
+  .hero__text-background {
+    top: -30rem;
+    left: -30rem; }
+  .motto__text {
+    width: 75%;
+    transform: translateY(0); }
+  .motto__divider {
+    width: 75%; }
+  .about__image {
+    height: 60rem;
+    width: 60rem; } }
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 31.25%; }
+  .hero__text-background {
+    top: -45rem;
+    left: -35rem; } }
+
+@media screen and (max-width: 26.25em) {
+  html {
+    font-size: 25%; }
+  .hero__text-background {
+    top: -70rem;
+    left: -45rem; } }
+
+@media screen and (max-width: 21.875em) {
+  html {
+    font-size: 18.75%; }
+  .hero__text-background {
+    top: -105rem;
+    left: -55rem; } }

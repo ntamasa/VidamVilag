@@ -280,7 +280,7 @@
 .services {
     // Display as grid so it is in the middle at all cost
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: max-content;
     grid-template-rows: min-content minmax(160rem, 1fr);
 
     // Alignment to the middle
@@ -292,7 +292,7 @@
 
     &__cards {
         // Dimensions
-        width: 100%;
+        width: 100vw;
 
         // Spacing on the sides
         padding: 0 10rem;
@@ -411,7 +411,7 @@
 
 .contacts {
     // Spacing to the side
-    margin-left: 10rem;
+    margin: 0 10rem;
 
     &__heading {
         // Text styling
@@ -617,6 +617,11 @@
     }
 
     .about {
+        width: 85%;
+
+        padding: 20rem 0;
+        margin: 0 auto;
+
         grid-template-rows: 1fr max-content;
         grid-template-columns: 1fr;
 
@@ -625,7 +630,7 @@
         gap: 7.5rem;
 
         &__text-box {
-            text-align: justify;
+            text-align: center;
 
             width: 90%;
 
@@ -671,6 +676,9 @@
         &__cards {
             grid-template-rows: repeat(8, 1fr);
             grid-template-columns: 1fr;
+
+            padding: 0;
+
         }
 
         &__card {
@@ -743,5 +751,81 @@
                 font-size: 3.2rem;
             }
         }
+    }
+}
+
+@include tablet-small {
+    html {
+        font-size: 43.75%;
+    }
+
+    .hero__text-background {
+            top: -19rem;
+            left: -22rem;
+        }
+
+    .about__text-box {
+        width: 100%;
+    }
+}
+
+@include phone-big {
+    html {
+        font-size: 37.5%;
+    }
+
+    .hero__text-background {
+            top: -30rem;
+            left: -30rem;
+    }
+
+    .motto {
+        &__text {
+            width: 75%;
+            transform: translateY(0);
+        }
+
+        &__divider {
+            width: 75%;
+        }
+    }
+
+    .about {
+        &__image {
+             @include square(60rem);
+        }
+    }
+}
+
+@include phone-big--2 {
+    html {
+        font-size: 31.25%;
+    }
+
+    .hero__text-background {
+        top: -45rem;
+        left: -35rem;
+    }
+}
+
+@include phone {
+    html {
+        font-size: 25%;
+    }
+
+    .hero__text-background {
+        top: -70rem;
+        left: -45rem;
+    }
+}
+
+@include phone-small {
+    html {
+        font-size: 18.75%;
+    }
+
+    .hero__text-background {
+        top: -105rem;
+        left: -55rem;
     }
 }
