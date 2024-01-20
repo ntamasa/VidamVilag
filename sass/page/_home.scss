@@ -27,10 +27,12 @@
     // Making it a grid
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: max-content 2fr 1fr;
+    grid-template-columns: max-content max-content;
 
     // Alignment
     align-items: center;
+    justify-items: center;
+    justify-content: space-between;
     
     // Fix place on top of the pace
     position: fixed;
@@ -43,7 +45,6 @@
     &__logo {
         // Spacing
         margin-left: 2rem;
-        justify-self: start;
 
         cursor: pointer;
     }
@@ -53,12 +54,11 @@
         margin-right: 5rem;
 
         // Making it a grid
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, min-content);
+        display: flex;
+        flex-direction: row;
 
         // Alignment in main and sub grid aswell
-        justify-content: space-between;
+        gap: 3.2rem;
 
         &-item {
             // Text
@@ -468,12 +468,6 @@
     }
 }
 
-@include desktop {
-    .navigation {
-        grid-template-columns: max-content 1fr 1fr
-    }
-}
-
 @include desktop-small {
     html {
         font-size: 56.25%;
@@ -552,38 +546,11 @@
         &__logo {
             @include square(15rem);
         }
+
+        &__menu {
+            opacity: 0;
+            visibility: hidden;
+        }
     }
 
-    // html {
-    //     // font-size: 43.75%;
-    // }
-
-    // .hero__text {
-    //     bottom: 6.5rem;
-    //     left: 6.5rem;
-
-    //     &-background {
-    //         top: -38.25rem;
-    //         left: -20rem;
-    //     }
-    // }
-
-    // .motto__text {
-    //     font-size: 2.4rem;
-    //     font-weight: 400;
-    //     letter-spacing: .25rem;
-    //     width: 50%;
-    //     text-align: center;
-    // }
-
-    // .about {
-    //     &__image {
-    //         @include square(40rem);
-    //     }
-    // }
-
-    // .services__card--description {
-    //     font-weight: 400;
-    //     font-size: 2rem;
-    // }
 }
