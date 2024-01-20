@@ -521,14 +521,14 @@ body {
         letter-spacing: .25rem;
         width: 65%; }
   .footer {
-    grid-template-rows: max-content 1fr max-content;
-    grid-template-columns: 1fr max-content; }
+    grid-template-rows: max-content 1fr 1fr max-content;
+    grid-template-columns: 1fr;
+    gap: 2.5rem; }
     .footer__logo {
-      grid-column: 2 / 3;
-      grid-row: 2 / -1;
-      margin-right: 10rem;
-      height: 40rem;
-      width: 40rem; }
+      grid-row: 5 / -1;
+      margin-top: -10rem;
+      height: 50rem;
+      width: 50rem; }
     .footer .contacts__heading {
       font-size: 5.2rem;
       font-weight: 500; }
@@ -538,7 +538,7 @@ body {
       letter-spacing: .1rem; }
     .footer .others-box {
       width: 70%;
-      margin-left: 20rem; }
+      margin: 0; }
       .footer .others-box .socials {
         justify-content: center;
         gap: 15rem; }

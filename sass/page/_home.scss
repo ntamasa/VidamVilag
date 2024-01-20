@@ -695,16 +695,17 @@
     /////////////////////////////////////////////////////////
     /// About us
     .footer {
-        grid-template-rows: max-content 1fr max-content;
-        grid-template-columns: 1fr max-content;
+        grid-template-rows: max-content 1fr 1fr max-content;
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
 
         &__logo {
-            grid-column: 2 / 3;
-            grid-row: 2 / -1;
+            grid-row: 5 / -1;
 
-            margin-right: 10rem;
+            margin-top: -10rem;
 
-            @include square(40rem);
+            @include square(50rem);
         }
 
         .contacts {
@@ -726,7 +727,7 @@
         .others-box {
             width: 70%;
 
-            margin-left: 20rem;
+            margin: 0;
 
             .socials {
                 justify-content: center;
