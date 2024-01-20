@@ -166,7 +166,7 @@ body {
 .hamburger-menu__active:checked ~ .hamburger-menu__navigation {
   transform: translateY(43rem); }
 
-@media screen and (min-width: 78.128em) {
+@media screen and (min-width: 65.625em) {
   .hamburger-menu__lines {
     opacity: 0;
     visibility: hidden; }

@@ -25,16 +25,17 @@
     }
 }
 
-@mixin hamburger-menu {
-    // 1250px
-    @media screen and (min-width: 78.128em) {
-        @content;
-    }
-}
 
 @mixin laptop {
     // 1250px
     @media screen and (max-width: 78.125em) {
+        @content;
+    }
+}
+
+@mixin hamburger-menu {
+    // 1050px
+    @media screen and (min-width: 65.625em) {
         @content;
     }
 }
